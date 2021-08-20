@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: rgb(148, 197, 247);
+}
+
+
+/* Menu Bar */
+
+.menu {
+    text-align: center;
+}
+
+.menu ul li {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #105873;
+    margin: 10px 5px 10px 0;
+    font-size: 20px;
+    transition: .4s;
+    position: relative;
+}
+
+.menu ul li:hover a {
+    background-color: #94c5f7;
+    color: #000;
+}
+
+.menu ul li a::after {
+    content: "";
+    left: 12px;
+    bottom: 8px;
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #105873;
+    transition: .4s;
+}
+
+.menu ul li:hover a::after {
+    cursor: pointer;
+    width: 70%;
+}
+
+
+/* Transform Section */
+
+.transform {
+    border: 1px solid black;
+    width: 1000px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.transform-design {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background: orange;
+    display: inline-block;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.div1 {
+    transform: translate(0, 0);
+    transition: .5s;
+}
+
+.div1:hover {
+    transform: translate(-25px, 30px);
+}
+
+.div2 {
+    transform: rotate(0deg);
+    transition: .5s;
+}
+
+.div2:hover {
+    transform: rotate(50deg);
+}
+
+.div3 {
+    transform: skew(0, 0);
+    transition: .5s;
+}
+
+.div3:hover {
+    transform: skew(25deg, 30deg);
+}
+
+.div4 {
+    transform: scale(1, 1);
+    transition: .5s;
+}
+
+.div4:hover {
+    transform: scale(1.5, 1.5);
+}
+
+
+/* Image Transform */
+
+.img-transform {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.img-transform img {
+    max-width: 100%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.img-transform img:hover {
+    transform: scale(1.2) rotate(360deg);
+}
+
+
+/* =============***============ */
